@@ -3,7 +3,7 @@ inputLabel
 
 Input placeholder
 
-Example 1
+##### Example 1
 ```html
 <input id="name" value="" placeholder="First Name" autocomplete="off"/>
 ```
@@ -12,7 +12,7 @@ $(function () {
 	$("[placeholder]").inputLabel();	
 });
 ```
-##### H5 Example 2
+##### Example 2
 ```html
 <input id="name" value="" lbl="First Name" class="inputLbl" autocomplete="off"/>
 ```
