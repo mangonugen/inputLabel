@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title></title>
+        <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>-->
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script type="text/javascript" src="jquery.inputlabel.min.js"></script>
+        <script type="text/javascript">
+			$(function () {
+				// call the plugin
+				//$("[placeholder]").inputLabel();
+				$(".inputLbl").inputLabel({
+					placeholderAttr: 'lbl'
+				});
+			});
+		</script>
+    </head>
+    <body>        
+        <form>
+            <input id="name" value="" placeholder="First Name" lbl="First Name" class="inputLbl" autocomplete="off"/>
+            <input id="last" value="Doe" placeholder="Last Name" lbl="Last Name" class="inputLbl" autocomplete="off" type="text"/>
+            <textarea id="text" cols="50" rows="5" placeholder="Random Text Goes Here..." lbl="Random Text Goes Here..." class="inputLbl"></textarea>
+            <button type="button" id="btnTest" onclick="TestFunc()">Test Value</button>
+        </form>
+        <script type="text/javascript">
+            function TestFunc() {
+                alert($("#name").val());
+                return false;
+            }
+        </script>
+    </body>
+</html>
